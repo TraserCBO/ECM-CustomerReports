@@ -1,0 +1,9 @@
+*.app
+*.flf
+
+**/.alpackages
+**/.alcache
+**/Translations/ECM-BC.g.xlf
+**/.vscode
+**/.output
+Translations/ECM-BC.g.xlf
