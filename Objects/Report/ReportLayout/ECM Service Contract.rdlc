@@ -1,0 +1,496 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2016/01/reportdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
+  <AutoRefresh>0</AutoRefresh>
+  <DataSources>
+    <DataSource Name="DataSource">
+      <ConnectionProperties>
+        <DataProvider>SQL</DataProvider>
+        <ConnectString />
+      </ConnectionProperties>
+      <rd:SecurityType>None</rd:SecurityType>
+    </DataSource>
+  </DataSources>
+  <ReportSections>
+    <ReportSection>
+      <Body>
+        <Height>2in</Height>
+        <Style />
+      </Body>
+      <Width>6.5in</Width>
+      <Page>
+        <Style />
+      </Page>
+    </ReportSection>
+  </ReportSections>
+  <ReportParameters>
+    <ReportParameter Name="ContractNo_ServContractCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>ContractNo_ServContractCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>ContractNo_ServContractCaption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="AnnualAmount_ServContractCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>AnnualAmount_ServContractCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>AnnualAmount_ServContractCaption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="InvoicePeriod_ServContractCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>InvoicePeriod_ServContractCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>InvoicePeriod_ServContractCaption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="BilltoCustNo_ServContractCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>BilltoCustNo_ServContractCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>BilltoCustNo_ServContractCaption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="Status_ServContractCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>Status_ServContractCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>Status_ServContractCaption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="Type_ContractDiscCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>Type_ContractDiscCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>Type_ContractDiscCaption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="No_ContractDiscCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>No_ContractDiscCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>No_ContractDiscCaption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="Discount_ContractDiscCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>Discount_ContractDiscCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>Discount_ContractDiscCaption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="ServItemNo_ServContractLineCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>ServItemNo_ServContractLineCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>ServItemNo_ServContractLineCaption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="Desc_ServContractLineCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>Desc_ServContractLineCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>Desc_ServContractLineCaption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="ItemNo_ServContractLineCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>ItemNo_ServContractLineCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>ItemNo_ServContractLineCaption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="SerialNo_ServContractLineCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>SerialNo_ServContractLineCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>SerialNo_ServContractLineCaption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="ServPeriod_ServContractLineCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>ServPeriod_ServContractLineCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>ServPeriod_ServContractLineCaption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="LineValue_ServContractLineCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>LineValue_ServContractLineCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>LineValue_ServContractLineCaption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="UOMCode_ServContractLineCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>UOMCode_ServContractLineCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>UOMCode_ServContractLineCaption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="RespTime_ServContractLineCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>RespTime_ServContractLineCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>RespTime_ServContractLineCaption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="Comm_ServCommentLineCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>Comm_ServCommentLineCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>Comm_ServCommentLineCaption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="Comm_servcommentline2Caption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>Comm_servcommentline2Caption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>Comm_servcommentline2Caption</Prompt>
+    </ReportParameter>
+  </ReportParameters>
+  <Code>Public Function BlankZero(ByVal Value As Decimal)
+    if Value = 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankPos(ByVal Value As Decimal)
+    if Value &gt; 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankZeroAndPos(ByVal Value As Decimal)
+    if Value &gt;= 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankNeg(ByVal Value As Decimal)
+    if Value &lt; 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankNegAndZero(ByVal Value As Decimal)
+    if Value &lt;= 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+</Code>
+  <Language>=User!Language</Language>
+  <ConsumeContainerWhitespace>true</ConsumeContainerWhitespace>
+  <rd:ReportUnitType>Inch</rd:ReportUnitType>
+  <rd:ReportID>0eeb6585-38ae-40f1-885b-8d50088d51b4</rd:ReportID>
+  <DataSets>
+    <DataSet Name="DataSet_Result">
+      <Fields>
+        <Field Name="ContractType_ServContract">
+          <DataField>ContractType_ServContract</DataField>
+        </Field>
+        <Field Name="ContractNo_ServContract">
+          <DataField>ContractNo_ServContract</DataField>
+        </Field>
+        <Field Name="OutputNo">
+          <DataField>OutputNo</DataField>
+        </Field>
+        <Field Name="CompanyInfoPicture">
+          <DataField>CompanyInfoPicture</DataField>
+        </Field>
+        <Field Name="CompanyInfo1Picture">
+          <DataField>CompanyInfo1Picture</DataField>
+        </Field>
+        <Field Name="CompanyInfo2Picture">
+          <DataField>CompanyInfo2Picture</DataField>
+        </Field>
+        <Field Name="CompanyInfo3Picture">
+          <DataField>CompanyInfo3Picture</DataField>
+        </Field>
+        <Field Name="AnnualAmount_ServContract">
+          <DataField>AnnualAmount_ServContract</DataField>
+        </Field>
+        <Field Name="AnnualAmount_ServContractFormat">
+          <DataField>AnnualAmount_ServContractFormat</DataField>
+        </Field>
+        <Field Name="NextInvoiceDate_ServContract">
+          <DataField>NextInvoiceDate_ServContract</DataField>
+        </Field>
+        <Field Name="InvoicePeriod_ServContract">
+          <DataField>InvoicePeriod_ServContract</DataField>
+        </Field>
+        <Field Name="StartingDate_ServContract">
+          <DataField>StartingDate_ServContract</DataField>
+        </Field>
+        <Field Name="CustAddr6">
+          <DataField>CustAddr6</DataField>
+        </Field>
+        <Field Name="CustAddr5">
+          <DataField>CustAddr5</DataField>
+        </Field>
+        <Field Name="CustAddr4">
+          <DataField>CustAddr4</DataField>
+        </Field>
+        <Field Name="CustAddr3">
+          <DataField>CustAddr3</DataField>
+        </Field>
+        <Field Name="CustAddr2">
+          <DataField>CustAddr2</DataField>
+        </Field>
+        <Field Name="CustAddr1">
+          <DataField>CustAddr1</DataField>
+        </Field>
+        <Field Name="CompanyAddr6">
+          <DataField>CompanyAddr6</DataField>
+        </Field>
+        <Field Name="CompanyAddr5">
+          <DataField>CompanyAddr5</DataField>
+        </Field>
+        <Field Name="BilltoCustNo_ServContract">
+          <DataField>BilltoCustNo_ServContract</DataField>
+        </Field>
+        <Field Name="CompanyAddr4">
+          <DataField>CompanyAddr4</DataField>
+        </Field>
+        <Field Name="CompanyAddr3">
+          <DataField>CompanyAddr3</DataField>
+        </Field>
+        <Field Name="CompanyAddr2">
+          <DataField>CompanyAddr2</DataField>
+        </Field>
+        <Field Name="CompanyAddr1">
+          <DataField>CompanyAddr1</DataField>
+        </Field>
+        <Field Name="ServiceContract">
+          <DataField>ServiceContract</DataField>
+        </Field>
+        <Field Name="Status_ServContract">
+          <DataField>Status_ServContract</DataField>
+        </Field>
+        <Field Name="CompanyInfoPhoneNo">
+          <DataField>CompanyInfoPhoneNo</DataField>
+        </Field>
+        <Field Name="CompanyInfoFaxNo">
+          <DataField>CompanyInfoFaxNo</DataField>
+        </Field>
+        <Field Name="Email_ServContract">
+          <DataField>Email_ServContract</DataField>
+        </Field>
+        <Field Name="PhoneNo_ServContract">
+          <DataField>PhoneNo_ServContract</DataField>
+        </Field>
+        <Field Name="SalesPersonText">
+          <DataField>SalesPersonText</DataField>
+        </Field>
+        <Field Name="SalesPurchPersonName">
+          <DataField>SalesPurchPersonName</DataField>
+        </Field>
+        <Field Name="PageCaption">
+          <DataField>PageCaption</DataField>
+        </Field>
+        <Field Name="NextInvoiceDate_ServContractCaption">
+          <DataField>NextInvoiceDate_ServContractCaption</DataField>
+        </Field>
+        <Field Name="StartingDate_ServContractCaption">
+          <DataField>StartingDate_ServContractCaption</DataField>
+        </Field>
+        <Field Name="CompanyInfoPhoneNoCaption">
+          <DataField>CompanyInfoPhoneNoCaption</DataField>
+        </Field>
+        <Field Name="CompanyInfoFaxNoCaption">
+          <DataField>CompanyInfoFaxNoCaption</DataField>
+        </Field>
+        <Field Name="PhoneNo_ServContractCaption">
+          <DataField>PhoneNo_ServContractCaption</DataField>
+        </Field>
+        <Field Name="Email_ServContractCaption">
+          <DataField>Email_ServContractCaption</DataField>
+        </Field>
+        <Field Name="InvoicePeriod_ServContractML">
+          <DataField>InvoicePeriod_ServContractML</DataField>
+        </Field>
+        <Field Name="Status_ServContractML">
+          <DataField>Status_ServContractML</DataField>
+        </Field>
+        <Field Name="Type_ContractDisc">
+          <DataField>Type_ContractDisc</DataField>
+        </Field>
+        <Field Name="No_ContractDisc">
+          <DataField>No_ContractDisc</DataField>
+        </Field>
+        <Field Name="StartingDate_ContractDisc">
+          <DataField>StartingDate_ContractDisc</DataField>
+        </Field>
+        <Field Name="Discount_ContractDisc">
+          <DataField>Discount_ContractDisc</DataField>
+        </Field>
+        <Field Name="Discount_ContractDiscFormat">
+          <DataField>Discount_ContractDiscFormat</DataField>
+        </Field>
+        <Field Name="ContractNo_ContractDisc">
+          <DataField>ContractNo_ContractDisc</DataField>
+        </Field>
+        <Field Name="StartingDate_ContractDiscCaption">
+          <DataField>StartingDate_ContractDiscCaption</DataField>
+        </Field>
+        <Field Name="ServiceDiscountsCaption">
+          <DataField>ServiceDiscountsCaption</DataField>
+        </Field>
+        <Field Name="ServItemNo_ServContractLine">
+          <DataField>ServItemNo_ServContractLine</DataField>
+        </Field>
+        <Field Name="Desc_ServContractLine">
+          <DataField>Desc_ServContractLine</DataField>
+        </Field>
+        <Field Name="ItemNo_ServContractLine">
+          <DataField>ItemNo_ServContractLine</DataField>
+        </Field>
+        <Field Name="SerialNo_ServContractLine">
+          <DataField>SerialNo_ServContractLine</DataField>
+        </Field>
+        <Field Name="ServPeriod_ServContractLine">
+          <DataField>ServPeriod_ServContractLine</DataField>
+        </Field>
+        <Field Name="LineValue_ServContractLine">
+          <DataField>LineValue_ServContractLine</DataField>
+        </Field>
+        <Field Name="LineValue_ServContractLineFormat">
+          <DataField>LineValue_ServContractLineFormat</DataField>
+        </Field>
+        <Field Name="UOMCode_ServContractLine">
+          <DataField>UOMCode_ServContractLine</DataField>
+        </Field>
+        <Field Name="RespTime_ServContractLine">
+          <DataField>RespTime_ServContractLine</DataField>
+        </Field>
+        <Field Name="RespTime_ServContractLineFormat">
+          <DataField>RespTime_ServContractLineFormat</DataField>
+        </Field>
+        <Field Name="ContractType_ServContractLine">
+          <DataField>ContractType_ServContractLine</DataField>
+        </Field>
+        <Field Name="ContractNo_ServContractLine">
+          <DataField>ContractNo_ServContractLine</DataField>
+        </Field>
+        <Field Name="LineNo_ServContractLine">
+          <DataField>LineNo_ServContractLine</DataField>
+        </Field>
+        <Field Name="ShowComments">
+          <DataField>ShowComments</DataField>
+        </Field>
+        <Field Name="Date_ServCommentLine">
+          <DataField>Date_ServCommentLine</DataField>
+        </Field>
+        <Field Name="Comm_ServCommentLine">
+          <DataField>Comm_ServCommentLine</DataField>
+        </Field>
+        <Field Name="TableSubtype_ServCommentLine">
+          <DataField>TableSubtype_ServCommentLine</DataField>
+        </Field>
+        <Field Name="Type_ServCommentLine">
+          <DataField>Type_ServCommentLine</DataField>
+        </Field>
+        <Field Name="LineNo_ServCommentLine">
+          <DataField>LineNo_ServCommentLine</DataField>
+        </Field>
+        <Field Name="Date_ServCommentLineCaption">
+          <DataField>Date_ServCommentLineCaption</DataField>
+        </Field>
+        <Field Name="ShipToAddr6">
+          <DataField>ShipToAddr6</DataField>
+        </Field>
+        <Field Name="ShipToAddr5">
+          <DataField>ShipToAddr5</DataField>
+        </Field>
+        <Field Name="ShipToAddr4">
+          <DataField>ShipToAddr4</DataField>
+        </Field>
+        <Field Name="ShipToAddr3">
+          <DataField>ShipToAddr3</DataField>
+        </Field>
+        <Field Name="ShipToAddr2">
+          <DataField>ShipToAddr2</DataField>
+        </Field>
+        <Field Name="ShipToAddr1">
+          <DataField>ShipToAddr1</DataField>
+        </Field>
+        <Field Name="ShipToCode">
+          <DataField>ShipToCode</DataField>
+        </Field>
+        <Field Name="ShiptoAddressCaption">
+          <DataField>ShiptoAddressCaption</DataField>
+        </Field>
+        <Field Name="ShowComments1">
+          <DataField>ShowComments1</DataField>
+        </Field>
+        <Field Name="Date_servcommentline2">
+          <DataField>Date_servcommentline2</DataField>
+        </Field>
+        <Field Name="Comm_servcommentline2">
+          <DataField>Comm_servcommentline2</DataField>
+        </Field>
+        <Field Name="TblSubtype_servcommentline2">
+          <DataField>TblSubtype_servcommentline2</DataField>
+        </Field>
+        <Field Name="Type_servcommentline2">
+          <DataField>Type_servcommentline2</DataField>
+        </Field>
+        <Field Name="LineNo_servcommentline2">
+          <DataField>LineNo_servcommentline2</DataField>
+        </Field>
+        <Field Name="CommentsCaption">
+          <DataField>CommentsCaption</DataField>
+        </Field>
+        <Field Name="Date_servcommentline2Caption">
+          <DataField>Date_servcommentline2Caption</DataField>
+        </Field>
+      </Fields>
+      <Query>
+        <DataSourceName>DataSource</DataSourceName>
+        <CommandText />
+      </Query>
+    </DataSet>
+  </DataSets>
+</Report>

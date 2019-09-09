@@ -1,0 +1,448 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2016/01/reportdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
+  <AutoRefresh>0</AutoRefresh>
+  <DataSources>
+    <DataSource Name="DataSource">
+      <ConnectionProperties>
+        <DataProvider>SQL</DataProvider>
+        <ConnectString />
+      </ConnectionProperties>
+      <rd:SecurityType>None</rd:SecurityType>
+    </DataSource>
+  </DataSources>
+  <ReportSections>
+    <ReportSection>
+      <Body>
+        <Height>2in</Height>
+        <Style />
+      </Body>
+      <Width>6.5in</Width>
+      <Page>
+        <Style />
+      </Page>
+    </ReportSection>
+  </ReportSections>
+  <ReportParameters>
+    <ReportParameter Name="PageNoCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>PageNoCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>PageNoCaption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="DocNo_ServItemLineCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>DocNo_ServItemLineCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>DocNo_ServItemLineCaption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="DocType_ServItemLineCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>DocType_ServItemLineCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>DocType_ServItemLineCaption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="SerialNo_ServItemLineCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>SerialNo_ServItemLineCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>SerialNo_ServItemLineCaption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="LineDesc_ServItemLineCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>LineDesc_ServItemLineCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>LineDesc_ServItemLineCaption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="ServItemNo_ServItemLineCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>ServItemNo_ServItemLineCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>ServItemNo_ServItemLineCaption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="GroupCode_ServItemLineCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>GroupCode_ServItemLineCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>GroupCode_ServItemLineCaption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="Warranty_ServItemLineCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>Warranty_ServItemLineCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>Warranty_ServItemLineCaption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="ItemNo_ServItemLineCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>ItemNo_ServItemLineCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>ItemNo_ServItemLineCaption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="RepStatusCode_ServItemLineCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>RepStatusCode_ServItemLineCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>RepStatusCode_ServItemLineCaption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="ShelfNo_ServItemLineCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>ShelfNo_ServItemLineCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>ShelfNo_ServItemLineCaption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="SerialNo1_ServLineCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>SerialNo1_ServLineCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>SerialNo1_ServLineCaption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="Type_ServLineCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>Type_ServLineCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>Type_ServLineCaption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="No_ServLineCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>No_ServLineCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>No_ServLineCaption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="VariantCode__ServLineCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>VariantCode__ServLineCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>VariantCode__ServLineCaption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="Desc_ServLineCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>Desc_ServLineCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>Desc_ServLineCaption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="Qty_ServLineCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>Qty_ServLineCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>Qty_ServLineCaption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="FaultAreaCode_ServLineCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>FaultAreaCode_ServLineCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>FaultAreaCode_ServLineCaption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="Symptom_ServLineCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>Symptom_ServLineCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>Symptom_ServLineCaption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="FaultCode_ServLineCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>FaultCode_ServLineCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>FaultCode_ServLineCaption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="ResCode_ServLineCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>ResCode_ServLineCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>ResCode_ServLineCaption</Prompt>
+    </ReportParameter>
+  </ReportParameters>
+  <Code>Public Function BlankZero(ByVal Value As Decimal)
+    if Value = 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankPos(ByVal Value As Decimal)
+    if Value &gt; 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankZeroAndPos(ByVal Value As Decimal)
+    if Value &gt;= 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankNeg(ByVal Value As Decimal)
+    if Value &lt; 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankNegAndZero(ByVal Value As Decimal)
+    if Value &lt;= 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+</Code>
+  <Language>=User!Language</Language>
+  <ConsumeContainerWhitespace>true</ConsumeContainerWhitespace>
+  <rd:ReportUnitType>Inch</rd:ReportUnitType>
+  <rd:ReportID>0eeb6585-38ae-40f1-885b-8d50088d51b4</rd:ReportID>
+  <DataSets>
+    <DataSet Name="DataSet_Result">
+      <Fields>
+        <Field Name="CompanyAddr6">
+          <DataField>CompanyAddr6</DataField>
+        </Field>
+        <Field Name="CompanyAddr5">
+          <DataField>CompanyAddr5</DataField>
+        </Field>
+        <Field Name="ServHeaderOrderDate">
+          <DataField>ServHeaderOrderDate</DataField>
+        </Field>
+        <Field Name="ServHeaderOrderTime">
+          <DataField>ServHeaderOrderTime</DataField>
+        </Field>
+        <Field Name="ContractNo_ServItemLine">
+          <DataField>ContractNo_ServItemLine</DataField>
+        </Field>
+        <Field Name="DocNo_ServItemLine">
+          <DataField>DocNo_ServItemLine</DataField>
+        </Field>
+        <Field Name="CompanyAddr4">
+          <DataField>CompanyAddr4</DataField>
+        </Field>
+        <Field Name="CustAddr6">
+          <DataField>CustAddr6</DataField>
+        </Field>
+        <Field Name="CustAddr5">
+          <DataField>CustAddr5</DataField>
+        </Field>
+        <Field Name="CustAddr4">
+          <DataField>CustAddr4</DataField>
+        </Field>
+        <Field Name="CustAddr3">
+          <DataField>CustAddr3</DataField>
+        </Field>
+        <Field Name="CustAddr2">
+          <DataField>CustAddr2</DataField>
+        </Field>
+        <Field Name="CustAddr1">
+          <DataField>CustAddr1</DataField>
+        </Field>
+        <Field Name="CompanyAddr3">
+          <DataField>CompanyAddr3</DataField>
+        </Field>
+        <Field Name="CompanyAddr2">
+          <DataField>CompanyAddr2</DataField>
+        </Field>
+        <Field Name="CompanyAddr1">
+          <DataField>CompanyAddr1</DataField>
+        </Field>
+        <Field Name="DocType_ServItemLine">
+          <DataField>DocType_ServItemLine</DataField>
+        </Field>
+        <Field Name="SerialNo_ServItemLine">
+          <DataField>SerialNo_ServItemLine</DataField>
+        </Field>
+        <Field Name="LineDesc_ServItemLine">
+          <DataField>LineDesc_ServItemLine</DataField>
+        </Field>
+        <Field Name="ServItemNo_ServItemLine">
+          <DataField>ServItemNo_ServItemLine</DataField>
+        </Field>
+        <Field Name="GroupCode_ServItemLine">
+          <DataField>GroupCode_ServItemLine</DataField>
+        </Field>
+        <Field Name="Warranty_ServItemLine">
+          <DataField>Warranty_ServItemLine</DataField>
+        </Field>
+        <Field Name="ItemNo_ServItemLine">
+          <DataField>ItemNo_ServItemLine</DataField>
+        </Field>
+        <Field Name="RepStatusCode_ServItemLine">
+          <DataField>RepStatusCode_ServItemLine</DataField>
+        </Field>
+        <Field Name="ShelfNo_ServItemLine">
+          <DataField>ShelfNo_ServItemLine</DataField>
+        </Field>
+        <Field Name="Warranty1_ServItemLine">
+          <DataField>Warranty1_ServItemLine</DataField>
+        </Field>
+        <Field Name="LineNo_ServItemLine">
+          <DataField>LineNo_ServItemLine</DataField>
+        </Field>
+        <Field Name="OrderDateCaption">
+          <DataField>OrderDateCaption</DataField>
+        </Field>
+        <Field Name="OrderTimeCaption">
+          <DataField>OrderTimeCaption</DataField>
+        </Field>
+        <Field Name="ContractNoCaption">
+          <DataField>ContractNoCaption</DataField>
+        </Field>
+        <Field Name="CustomerAddressCaption">
+          <DataField>CustomerAddressCaption</DataField>
+        </Field>
+        <Field Name="WorksheetCaption">
+          <DataField>WorksheetCaption</DataField>
+        </Field>
+        <Field Name="Comment_ServCommentLine">
+          <DataField>Comment_ServCommentLine</DataField>
+        </Field>
+        <Field Name="TblLineNo_ServCommentLine">
+          <DataField>TblLineNo_ServCommentLine</DataField>
+        </Field>
+        <Field Name="LineNo_ServCommentLine">
+          <DataField>LineNo_ServCommentLine</DataField>
+        </Field>
+        <Field Name="FaultCommentsCaption">
+          <DataField>FaultCommentsCaption</DataField>
+        </Field>
+        <Field Name="Comment1_ServCommentLine">
+          <DataField>Comment1_ServCommentLine</DataField>
+        </Field>
+        <Field Name="TblLineNo1_ServCommentLine">
+          <DataField>TblLineNo1_ServCommentLine</DataField>
+        </Field>
+        <Field Name="LineNo1_ServCommentLine">
+          <DataField>LineNo1_ServCommentLine</DataField>
+        </Field>
+        <Field Name="ResolutionCommentsCaption">
+          <DataField>ResolutionCommentsCaption</DataField>
+        </Field>
+        <Field Name="SerialNo1_ServLine">
+          <DataField>SerialNo1_ServLine</DataField>
+        </Field>
+        <Field Name="Type_ServLine">
+          <DataField>Type_ServLine</DataField>
+        </Field>
+        <Field Name="No_ServLine">
+          <DataField>No_ServLine</DataField>
+        </Field>
+        <Field Name="VariantCode__ServLine">
+          <DataField>VariantCode__ServLine</DataField>
+        </Field>
+        <Field Name="Desc_ServLine">
+          <DataField>Desc_ServLine</DataField>
+        </Field>
+        <Field Name="Qty_ServLine">
+          <DataField>Qty_ServLine</DataField>
+        </Field>
+        <Field Name="Qty_ServLineFormat">
+          <DataField>Qty_ServLineFormat</DataField>
+        </Field>
+        <Field Name="FaultAreaCode_ServLine">
+          <DataField>FaultAreaCode_ServLine</DataField>
+        </Field>
+        <Field Name="Symptom_ServLine">
+          <DataField>Symptom_ServLine</DataField>
+        </Field>
+        <Field Name="FaultCode_ServLine">
+          <DataField>FaultCode_ServLine</DataField>
+        </Field>
+        <Field Name="ResCode_ServLine">
+          <DataField>ResCode_ServLine</DataField>
+        </Field>
+        <Field Name="LineNo_ServLine">
+          <DataField>LineNo_ServLine</DataField>
+        </Field>
+        <Field Name="ServiceLinesCaption">
+          <DataField>ServiceLinesCaption</DataField>
+        </Field>
+        <Field Name="ShipToAddr6">
+          <DataField>ShipToAddr6</DataField>
+        </Field>
+        <Field Name="ShipToAddr5">
+          <DataField>ShipToAddr5</DataField>
+        </Field>
+        <Field Name="ShipToAddr4">
+          <DataField>ShipToAddr4</DataField>
+        </Field>
+        <Field Name="ShipToAddr3">
+          <DataField>ShipToAddr3</DataField>
+        </Field>
+        <Field Name="ShipToAddr2">
+          <DataField>ShipToAddr2</DataField>
+        </Field>
+        <Field Name="ShipToAddr1">
+          <DataField>ShipToAddr1</DataField>
+        </Field>
+        <Field Name="ShipToPhone">
+          <DataField>ShipToPhone</DataField>
+        </Field>
+        <Field Name="ShiptoAddressCaption">
+          <DataField>ShiptoAddressCaption</DataField>
+        </Field>
+      </Fields>
+      <Query>
+        <DataSourceName>DataSource</DataSourceName>
+        <CommandText />
+      </Query>
+    </DataSet>
+  </DataSets>
+</Report>

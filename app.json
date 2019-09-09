@@ -1,0 +1,27 @@
+{
+  "id": "1d5df5ec-fdb6-4a42-aa38-714da26c1528",
+  "name": "ECM-CustomerReports",
+  "publisher": "TRASER Software GmbH",
+  "version": "2.1908.31719.0",
+  "brief": "",
+  "description": "ECM Document Mangagement - Customer Reports",
+  "privacyStatement": "",
+  "EULA": "",
+  "url": "http://www.traser-software.de/",
+  "logo": "traser_logo_dms_quadrat.png",
+  "dependencies": [{ "appId": "d97750a4-edb1-4797-8da3-3e7bfa5d64da", "name": "ECM-BC", "publisher": "TRASER Software GmbH", "version": "2.1908.31719.0"}],
+  "screenshots": [],
+  "supportedLocales": ["de-DE", "en-US"],
+  "platform": "13.0.0.0",
+  "application": "13.0.0.0",
+  "idRange": {
+      "from": 50000,
+      "to": 50099
+  },
+  "help": "https://docs.traser-software.de",
+  "helpBaseUrl": "https://docs.traser-software.de/{0}",
+  "showMyCode": true,
+  "runtime": "2.2",
+  "features": ["TranslationFile"],
+  "target": "Internal"
+}
