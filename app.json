@@ -9,7 +9,7 @@
   "EULA": "",
   "url": "http://www.traser-software.de/",
   "logo": "traser_logo_dms_quadrat.png",
-  "dependencies": [{ "appId": "d97750a4-edb1-4797-8da3-3e7bfa5d64da", "name": "ECM-BC", "publisher": "TRASER Software GmbH", "version": "2.1908.31719.0"}],
+  "dependencies": [{ "appId": "d97750a4-edb1-4797-8da3-3e7bfa5d64da", "name": "ECM-BC", "publisher": "TRASER Software GmbH", "version": "2.1909.31719.0"}],
   "screenshots": [],
   "supportedLocales": ["de-DE", "en-US"],
   "platform": "13.0.0.0",
